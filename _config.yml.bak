@@ -88,7 +88,7 @@ jsonContent:
     raw: false
     content: false
     slug: false
-    updated: true
+    updated: false
     comments: false
     link: false
     permalink: false
