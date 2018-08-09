@@ -6,18 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://niwanli.github.io">
-  <title>Archives | 倪万里|Wanli Ni</title>
+  <title>R Language Programming | 倪万里|Wanli Ni</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="sharing my life">
-<meta property="og:type" content="website">
-<meta property="og:title" content="倪万里|Wanli Ni">
-<meta property="og:url" content="http://niwanli.github.io/archives/index.html">
+  <meta name="description" content="第1章 R语言入门  用帮助窗口(或命令)查看t. test()(t检验)函数的使用方法.  12&amp;gt; ?t.test()starting httpd help server ... done  运行命令seq(0,10,by=3)和seq(0,10,length.out=4)来体会两个参数by和length.out的差别. 1234&amp;gt; seq(0,10,by=3)[1] 0">
+<meta name="keywords" content="R Language">
+<meta property="og:type" content="article">
+<meta property="og:title" content="R Language Programming">
+<meta property="og:url" content="http://niwanli.github.io/2018/08/09/R-Language-Programming/index.html">
 <meta property="og:site_name" content="倪万里|Wanli Ni">
-<meta property="og:description" content="sharing my life">
+<meta property="og:description" content="第1章 R语言入门  用帮助窗口(或命令)查看t. test()(t检验)函数的使用方法.  12&amp;gt; ?t.test()starting httpd help server ... done  运行命令seq(0,10,by=3)和seq(0,10,length.out=4)来体会两个参数by和length.out的差别. 1234&amp;gt; seq(0,10,by=3)[1] 0">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.imgur.com/aGb6enT.png">
+<meta property="og:image" content="https://i.imgur.com/jrPJnLn.png">
+<meta property="og:updated_time" content="2018-08-09T14:24:11.245Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="倪万里|Wanli Ni">
-<meta name="twitter:description" content="sharing my life">
+<meta name="twitter:title" content="R Language Programming">
+<meta name="twitter:description" content="第1章 R语言入门  用帮助窗口(或命令)查看t. test()(t检验)函数的使用方法.  12&amp;gt; ?t.test()starting httpd help server ... done  运行命令seq(0,10,by=3)和seq(0,10,length.out=4)来体会两个参数by和length.out的差别. 1234&amp;gt; seq(0,10,by=3)[1] 0">
+<meta name="twitter:image" content="https://i.imgur.com/aGb6enT.png">
   
     <link rel="alternative" href="/atom.xml" title="倪万里|Wanli Ni" type="application/atom+xml">
   
@@ -139,36 +144,336 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="w-R-Language-Programming" class="article article-type-w " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-w">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/09/R-Language-Programming/" class="archive-article-date">
-  	<time datetime="2018-08-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/09/R-Language-Programming/">R Language Programming</a>
+    <h1 class="article-title" itemprop="name">
+      R Language Programming
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/08/09/R-Language-Programming/" class="archive-article-date">
+  	<time datetime="2018-08-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第1章-r语言入门">第1章 R语言入门</h2>
+<ol type="1">
+<li>用帮助窗口(或命令)查看<code>t. test()</code>(t检验)函数的使用方法.</li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; ?t.test()</span><br><span class="line">starting httpd help server <span class="keyword">...</span> done</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>运行命令<code>seq(0,10,by=3)</code>和<code>seq(0,10,length.out=4)</code>来体会两个参数<code>by</code>和<code>length.out</code>的差别. <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; seq(<span class="number">0</span>,<span class="number">10</span>,by=<span class="number">3</span>)</span><br><span class="line">[<span class="number">1</span>] <span class="number">0</span> <span class="number">3</span> <span class="number">6</span> <span class="number">9</span></span><br><span class="line">&gt; seq(<span class="number">0</span>,<span class="number">10</span>,length.out=<span class="number">4</span>)</span><br><span class="line">[<span class="number">1</span>]  <span class="number">0.000000</span>  <span class="number">3.333333</span>  <span class="number">6.666667</span> <span class="number">10.000000</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<a id="more"></a>
+<ol start="3" type="1">
+<li>构造一个向量<strong>x</strong>, 向量是由5个1, 3个2, 4个3和2个4构成, 注意用到<code>rep()</code>函数.</li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; rep(<span class="number">1</span>:<span class="number">4</span>,c(<span class="number">5</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>))</span><br><span class="line"> [<span class="number">1</span>] <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">2</span> <span class="number">2</span> <span class="number">2</span> <span class="number">3</span> <span class="number">3</span> <span class="number">3</span> <span class="number">3</span> <span class="number">4</span> <span class="number">4</span></span><br></pre></td></tr></table></figure>
+<ol start="4" type="1">
+<li>构造4×5矩阵<strong>A</strong>和<strong>B</strong>, 其中<strong>A</strong>是将1, 2, … , 20按列输入, <strong>B</strong>是按行输入; 矩阵<strong>C</strong>是由<strong>A</strong>的前3行和前3列构成的矩阵; 矩阵<strong>D</strong>是由矩阵<strong>B</strong>的各列构成的矩阵, 但不含<strong>B</strong>的第3列.</li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&gt; A &lt;- matrix(<span class="number">1</span>:<span class="number">20</span>,nrow=<span class="number">4</span>,ncol=<span class="number">5</span>,byrow=<span class="literal">FALSE</span>);A</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>] [,<span class="number">4</span>] [,<span class="number">5</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">5</span>    <span class="number">9</span>   <span class="number">13</span>   <span class="number">17</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">2</span>    <span class="number">6</span>   <span class="number">10</span>   <span class="number">14</span>   <span class="number">18</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">3</span>    <span class="number">7</span>   <span class="number">11</span>   <span class="number">15</span>   <span class="number">19</span></span><br><span class="line">[<span class="number">4</span>,]    <span class="number">4</span>    <span class="number">8</span>   <span class="number">12</span>   <span class="number">16</span>   <span class="number">20</span></span><br><span class="line">&gt; (B &lt;- matrix(<span class="number">1</span>:<span class="number">20</span>,nrow=<span class="number">4</span>,ncol=<span class="number">5</span>,byrow=<span class="literal">TRUE</span>))</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>] [,<span class="number">4</span>] [,<span class="number">5</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">2</span>    <span class="number">3</span>    <span class="number">4</span>    <span class="number">5</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">6</span>    <span class="number">7</span>    <span class="number">8</span>    <span class="number">9</span>   <span class="number">10</span></span><br><span class="line">[<span class="number">3</span>,]   <span class="number">11</span>   <span class="number">12</span>   <span class="number">13</span>   <span class="number">14</span>   <span class="number">15</span></span><br><span class="line">[<span class="number">4</span>,]   <span class="number">16</span>   <span class="number">17</span>   <span class="number">18</span>   <span class="number">19</span>   <span class="number">20</span></span><br><span class="line">&gt; (C &lt;- A[<span class="number">1</span>:<span class="number">3</span>,<span class="number">1</span>:<span class="number">3</span>])</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">5</span>    <span class="number">9</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">2</span>    <span class="number">6</span>   <span class="number">10</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">3</span>    <span class="number">7</span>   <span class="number">11</span></span><br><span class="line">&gt; (D &lt;- A[,-<span class="number">3</span>])</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>] [,<span class="number">4</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">5</span>   <span class="number">13</span>   <span class="number">17</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">2</span>    <span class="number">6</span>   <span class="number">14</span>   <span class="number">18</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">3</span>    <span class="number">7</span>   <span class="number">15</span>   <span class="number">19</span></span><br><span class="line">[<span class="number">4</span>,]    <span class="number">4</span>    <span class="number">8</span>   <span class="number">16</span>   <span class="number">20</span></span><br></pre></td></tr></table></figure>
+<ol start="5" type="1">
+<li><p><span class="math inline">\(n\)</span>阶$ Hilbert$矩阵定义如下:</p>
+<p><span class="math inline">\(\textbf{H} = (h_{ij})_{n \times n}, h_{ij} = \frac{1}{i+j-1}, i,j = 1,2, \dots ,n.\)</span></p>
+<p>用循环函数生成一个5阶的 <span class="math inline">\(Hilbert\)</span>矩阵.</p></li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x &lt;- <span class="number">5</span></span><br><span class="line">H &lt;- matrix(nrow=<span class="number">5</span>,ncol=<span class="number">5</span>)</span><br><span class="line"><span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">1</span>:x)&#123;</span><br><span class="line">	<span class="keyword">for</span> (j <span class="keyword">in</span> <span class="number">1</span>:x)&#123;</span><br><span class="line">		H[i,j] &lt;- <span class="number">1</span>/(i+j-<span class="number">1</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;H</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">          [,<span class="number">1</span>]      [,<span class="number">2</span>]      [,<span class="number">3</span>]      [,<span class="number">4</span>]      [,<span class="number">5</span>]</span><br><span class="line">[<span class="number">1</span>,] <span class="number">1.0000000</span> <span class="number">0.5000000</span> <span class="number">0.3333333</span> <span class="number">0.2500000</span> <span class="number">0.2000000</span></span><br><span class="line">[<span class="number">2</span>,] <span class="number">0.5000000</span> <span class="number">0.3333333</span> <span class="number">0.2500000</span> <span class="number">0.2000000</span> <span class="number">0.1666667</span></span><br><span class="line">[<span class="number">3</span>,] <span class="number">0.3333333</span> <span class="number">0.2500000</span> <span class="number">0.2000000</span> <span class="number">0.1666667</span> <span class="number">0.1428571</span></span><br><span class="line">[<span class="number">4</span>,] <span class="number">0.2500000</span> <span class="number">0.2000000</span> <span class="number">0.1666667</span> <span class="number">0.1428571</span> <span class="number">0.1250000</span></span><br><span class="line">[<span class="number">5</span>,] <span class="number">0.2000000</span> <span class="number">0.1666667</span> <span class="number">0.1428571</span> <span class="number">0.1250000</span> <span class="number">0.1111111</span></span><br></pre></td></tr></table></figure>
+<ol start="6" type="1">
+<li><p>已知有5名学生的数据, 如表1所示. 用数据框的形式读入数据.</p>
+<p><em>表 1 学生数据</em></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+<th>身高/cm</th>
+<th>体重/kg</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td>张三</td>
+<td>女</td>
+<td>14</td>
+<td>156</td>
+<td>42.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td>李四</td>
+<td>男</td>
+<td>15</td>
+<td>165</td>
+<td>49.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td>王五</td>
+<td>女</td>
+<td>16</td>
+<td>157</td>
+<td>41.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td>赵六</td>
+<td>男</td>
+<td>14</td>
+<td>162</td>
+<td>52.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td>丁一</td>
+<td>女</td>
+<td>15</td>
+<td>159</td>
+<td>45.5</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">student_data &lt;- data.frame(</span><br><span class="line">	姓名 = c(<span class="string">'张三'</span>,<span class="string">'李四'</span>,<span class="string">'王五'</span>,<span class="string">'赵六'</span>,<span class="string">'丁一'</span>),</span><br><span class="line">	性别 = c(<span class="string">'女'</span>,<span class="string">'男'</span>,<span class="string">'女'</span>,<span class="string">'女'</span>,<span class="string">'男'</span>),</span><br><span class="line">	年龄 = c(<span class="number">14</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">14</span>,<span class="number">15</span>),</span><br><span class="line">	<span class="string">'身高/cm'</span>  = c(<span class="number">156</span>,<span class="number">65</span>,<span class="number">157</span>,<span class="number">162</span>,<span class="number">175</span>),</span><br><span class="line">	<span class="string">'体重/kg'</span> = c(<span class="number">42.0</span>,<span class="number">49.0</span>,<span class="number">41.5</span>,<span class="number">52.0</span>,<span class="number">45.5</span>)</span><br><span class="line">);student_data</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  姓名 性别 年龄 身高.cm 体重.kg</span><br><span class="line"><span class="number">1</span> 张三   女   <span class="number">14</span>     <span class="number">156</span>    <span class="number">42.0</span></span><br><span class="line"><span class="number">2</span> 李四   男   <span class="number">15</span>      <span class="number">65</span>    <span class="number">49.0</span></span><br><span class="line"><span class="number">3</span> 王五   女   <span class="number">16</span>     <span class="number">157</span>    <span class="number">41.5</span></span><br><span class="line"><span class="number">4</span> 赵六   女   <span class="number">14</span>     <span class="number">162</span>    <span class="number">52.0</span></span><br><span class="line"><span class="number">5</span> 丁一   男   <span class="number">15</span>     <span class="number">175</span>    <span class="number">45.5</span></span><br></pre></td></tr></table></figure></li>
+<li><p>将表1的数据写成一个纯文本文件, 用函数<code>read.table()</code>读该文件, 然后再用函数 <code>write.csv()</code>写成一个能用 Excel表能打开的文件, 并用 Excel表打开.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">write.csv(student_data, file=<span class="string">"student_data.csv"</span>, row.names=<span class="literal">FALSE</span>)</span><br><span class="line">read.csv(<span class="string">"student_data.csv"</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>用<code>scan()</code>函数读下列数据, 并将它们放在列表中</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">dog</th>
+<th style="text-align: center;">3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>cat</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>duck</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">animals &lt;- scan(file=<span class="string">"animals.txt"</span>, what=character())</span><br><span class="line">(Lst &lt;- list(animals))</span><br><span class="line">(Lst &lt;- as.list(animals))</span><br></pre></td></tr></table></figure></li>
+<li><p>编写一个R程序(函数)输入一个整数<span class="math inline">\(m\)</span>, 如果<span class="math inline">\(n≤0\)</span>, 则中止运算,并输出一句话: <strong>“要求输入一个正整数”</strong>; 否则, 如果<span class="math inline">\(m\)</span>是偶数, 则将<span class="math inline">\(n\)</span>除2, 并赋给<span class="math inline">\(n\)</span>; 否则, 将<span class="math inline">\(3n+1\)</span>赋给<span class="math inline">\(n\)</span>. 不断循环, 只到<span class="math inline">\(n=1\)</span>, 才停止计算, 并输出一句话: <strong>“运算成功”</strong>. 这个例子是为了检验数论中的一个简单定理.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">fun &lt;- <span class="keyword">function</span>(n)&#123;</span><br><span class="line">	<span class="keyword">if</span>(n&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="keyword">repeat</span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(n%%<span class="number">2</span>==<span class="number">0</span>) n&lt;-n/<span class="number">2</span> <span class="keyword">else</span> n&lt;-(<span class="number">3</span>*n+<span class="number">1</span>)</span><br><span class="line">			<span class="keyword">if</span>(n==<span class="number">1</span>)&#123;</span><br><span class="line">				print(<span class="string">"运算成功"</span>)</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		print(<span class="string">"要求输入一个正整数"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; fun(-<span class="number">4</span>)</span><br><span class="line">[<span class="number">1</span>] <span class="string">"要求输入一个正整数"</span></span><br><span class="line">&gt; fun(<span class="number">22</span>)</span><br><span class="line">[<span class="number">1</span>] <span class="string">"运算成功"</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="第2章-数值计算">第2章 数值计算</h2>
+<ol type="1">
+<li><p>设<span class="math inline">\(x=(1,2,3)^T, y=(4,5,6)^T\)</span>, 作如下运算:</p>
+<ol type="1">
+<li><p>计算<span class="math inline">\(z=2x+y+e\)</span>,其中<span class="math inline">\(e=(1,1,1)^T\)</span>;</p></li>
+<li><p>计算<span class="math inline">\(x\)</span>与<span class="math inline">\(y\)</span>的内积;</p></li>
+<li><p>计算<span class="math inline">\(x\)</span>与<span class="math inline">\(y\)</span>的外积.</p></li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt; x &lt;- matrix(c(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>),nrow=<span class="number">3</span>)</span><br><span class="line">&gt; y &lt;- matrix(c(<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>),nrow=<span class="number">3</span>)</span><br><span class="line">&gt; e &lt;- matrix(c(<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>),nrow=<span class="number">3</span>)</span><br><span class="line">&gt; <span class="comment"># 四则运算</span></span><br><span class="line">&gt; (z = <span class="number">2</span>*x+y+e)</span><br><span class="line">     [,<span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">7</span></span><br><span class="line">[<span class="number">2</span>,]   <span class="number">10</span></span><br><span class="line">[<span class="number">3</span>,]   <span class="number">13</span></span><br><span class="line">&gt; <span class="comment"># 內积</span></span><br><span class="line">&gt; crossprod(x,y)</span><br><span class="line">     [,<span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>,]   <span class="number">32</span></span><br><span class="line">&gt; <span class="comment"># 外积</span></span><br><span class="line">&gt; tcrossprod(x,y)</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">4</span>    <span class="number">5</span>    <span class="number">6</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">8</span>   <span class="number">10</span>   <span class="number">12</span></span><br><span class="line">[<span class="number">3</span>,]   <span class="number">12</span>   <span class="number">15</span>   <span class="number">18</span></span><br></pre></td></tr></table></figure></li>
+<li>设 $  =
+<span class="math display">\[\begin{bmatrix} 1 &amp; \quad 2 &amp; \quad 0 \\ 2 &amp; \quad 5 &amp; \quad -1 \\ 4 &amp; \quad 10 &amp; \quad -1 \end{bmatrix}\]</span>
+<p>$</p>
+<p>计算:</p>
+<ol type="1">
+<li><p><span class="math inline">\(\mathbf{B} = \mathbf{A}^T\)</span>;</p></li>
+<li><p><span class="math inline">\(\mathbf{C} = \mathbf{A} + \mathbf{B}\)</span>;</p></li>
+<li><p><span class="math inline">\(\mathbf{D} = \mathbf{AB}\)</span>;</p></li>
+<li><p><span class="math inline">\(\mathbf{E} = (e_{ij})_{n \times n}\)</span>, 其中<span class="math inline">\(e_{ij} = a_{ij}b_{ij}, i,j=1,2,3\)</span>.</p></li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&gt; A &lt;- matrix(c(<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">5</span>,-<span class="number">1</span>,<span class="number">4</span>,<span class="number">10</span>,-<span class="number">1</span>),nrow=<span class="number">3</span>,byrow=<span class="literal">TRUE</span>);A</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">2</span>    <span class="number">0</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">2</span>    <span class="number">5</span>   -<span class="number">1</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">4</span>   <span class="number">10</span>   -<span class="number">1</span></span><br><span class="line">&gt; B &lt;- t(A);B</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">2</span>    <span class="number">4</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">2</span>    <span class="number">5</span>   <span class="number">10</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">0</span>   -<span class="number">1</span>   -<span class="number">1</span></span><br><span class="line">&gt; C &lt;- A + B;C</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">2</span>    <span class="number">4</span>    <span class="number">4</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">4</span>   <span class="number">10</span>    <span class="number">9</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">4</span>    <span class="number">9</span>   -<span class="number">2</span></span><br><span class="line">&gt; D &lt;- A %*% B;D</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">5</span>   <span class="number">12</span>   <span class="number">24</span></span><br><span class="line">[<span class="number">2</span>,]   <span class="number">12</span>   <span class="number">30</span>   <span class="number">59</span></span><br><span class="line">[<span class="number">3</span>,]   <span class="number">24</span>   <span class="number">59</span>  <span class="number">117</span></span><br><span class="line">&gt; E &lt;- A*B;E</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">4</span>    <span class="number">0</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">4</span>   <span class="number">25</span>  -<span class="number">10</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">0</span>  -<span class="number">10</span>    <span class="number">1</span></span><br></pre></td></tr></table></figure></li>
+<li>设 $  =
+<span class="math display">\[\begin{bmatrix} 1 &amp; \quad 2 &amp; \quad 0 \\ 2 &amp; \quad 5 &amp; \quad -1 \\ 4 &amp; \quad 10 &amp; \quad -1 \end{bmatrix}\]</span>
+$ $  =
+<span class="math display">\[\begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}\]</span>
+<p>$<br>
+作如下运算:</p>
+<ol type="1">
+<li><p>求矩阵<strong>A</strong>的行列式;</p></li>
+<li><p>求解线性方程组<span class="math inline">\(\mathbf{Ax=b}\)</span>;</p></li>
+<li><p>求矩阵<strong>A</strong>的逆<span class="math inline">\(\mathbf{A}^{-1}\)</span>, 并计算<span class="math inline">\(\mathbf{A}^{-1} \mathbf{b}\)</span>.</p></li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&gt; A &lt;- matrix(c(<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">5</span>,-<span class="number">1</span>,<span class="number">4</span>,<span class="number">10</span>,-<span class="number">1</span>),nrow=<span class="number">3</span>,byrow=<span class="literal">TRUE</span>);A</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span>    <span class="number">2</span>    <span class="number">0</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">2</span>    <span class="number">5</span>   -<span class="number">1</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">4</span>   <span class="number">10</span>   -<span class="number">1</span></span><br><span class="line">&gt; b &lt;- matrix(c(<span class="number">1</span>,-<span class="number">1</span>,<span class="number">1</span>),nrow=<span class="number">3</span>,byrow=<span class="literal">FALSE</span>);b</span><br><span class="line">     [,<span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span></span><br><span class="line">[<span class="number">2</span>,]   -<span class="number">1</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">1</span></span><br><span class="line">&gt; <span class="comment"># 矩阵A的行列式</span></span><br><span class="line">&gt; det(A)</span><br><span class="line">[<span class="number">1</span>] <span class="number">1</span></span><br><span class="line">&gt; <span class="comment"># 解线性方程组</span></span><br><span class="line">&gt; solve(A,b)</span><br><span class="line">     [,<span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">0</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">3</span></span><br><span class="line">&gt; <span class="comment"># 矩阵A的逆</span></span><br><span class="line">&gt; solve(A)</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">5</span>    <span class="number">2</span>   -<span class="number">2</span></span><br><span class="line">[<span class="number">2</span>,]   -<span class="number">2</span>   -<span class="number">1</span>    <span class="number">1</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">0</span>   -<span class="number">2</span>    <span class="number">1</span></span><br><span class="line">&gt; <span class="comment"># 矩阵A的逆乘以b</span></span><br><span class="line">&gt; solve(A) %*% b</span><br><span class="line">     [,<span class="number">1</span>]</span><br><span class="line">[<span class="number">1</span>,]    <span class="number">1</span></span><br><span class="line">[<span class="number">2</span>,]    <span class="number">0</span></span><br><span class="line">[<span class="number">3</span>,]    <span class="number">3</span></span><br></pre></td></tr></table></figure></li>
+<li><p>设</p>
+$  =
+<span class="math display">\[\begin{bmatrix} 1 &amp; \quad 2 &amp; \quad 0 \\ 2 &amp; \quad 5 &amp; \quad -1 \\ 4 &amp; \quad 10 &amp; \quad -1 \end{bmatrix}\]</span>
+<p>$</p>
+<p>作如下运算:</p>
+<ol type="1">
+<li><p>列主元<strong>LU分解</strong>, 即求<strong>P</strong>, <strong>L</strong>和<strong>U</strong>, 使得<span class="math inline">\(\mathbf{A=PLU}\)</span>;</p></li>
+<li><p><strong>QR分解</strong>, 即求正交阵<strong>Q</strong>和上三角阵<strong>R</strong>, 使得<span class="math inline">\(\mathbf{A=QR}\)</span>;</p></li>
+<li><p>奇异值分解, 即求正交阵<strong>U</strong>, <strong>V</strong>和对角阵<strong>D</strong>, 使得<span class="math inline">\(\mathbf{A=UDV}^{T}\)</span>;</p></li>
+<li><p>谱分解, 求矩阵<strong>A</strong>的特征值和对应特征值的特征向量.</p></li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">library</span>(lattice);<span class="keyword">library</span>(Matrix)</span><br><span class="line">&gt; A &lt;- matrix(c(<span class="number">1</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">5</span>,-<span class="number">1</span>,<span class="number">4</span>,<span class="number">10</span>,-<span class="number">1</span>),nrow=<span class="number">3</span>,byrow=<span class="literal">TRUE</span>)</span><br><span class="line">&gt; <span class="comment"># LU分解</span></span><br><span class="line">&gt; A.lu &lt;- lu(A);A.lu</span><br><span class="line"><span class="string">'MatrixFactorization'</span> of Formal class <span class="string">'denseLU'</span> [package <span class="string">"Matrix"</span>] with <span class="number">4</span> slots</span><br><span class="line">  ..@ x       : num [<span class="number">1</span>:<span class="number">9</span>] <span class="number">4</span> <span class="number">0.25</span> <span class="number">0.5</span> <span class="number">10</span> -<span class="number">0.5</span> <span class="number">0</span> -<span class="number">1</span> <span class="number">0.25</span> -<span class="number">0.5</span></span><br><span class="line">  ..@ perm    : int [<span class="number">1</span>:<span class="number">3</span>] <span class="number">3</span> <span class="number">3</span> <span class="number">3</span></span><br><span class="line">  ..@ Dimnames:List of <span class="number">2</span></span><br><span class="line">  .. ..$ : <span class="literal">NULL</span></span><br><span class="line">  .. ..$ : <span class="literal">NULL</span></span><br><span class="line">  ..@ Dim     : int [<span class="number">1</span>:<span class="number">2</span>] <span class="number">3</span> <span class="number">3</span></span><br><span class="line">&gt; ex &lt;- expand(A.lu);ex</span><br><span class="line">$`L`</span><br><span class="line"><span class="number">3</span> x <span class="number">3</span> Matrix of class <span class="string">"dtrMatrix"</span> (unitriangular)</span><br><span class="line">     [,<span class="number">1</span>] [,<span class="number">2</span>] [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] <span class="number">1.00</span>    .    .</span><br><span class="line">[<span class="number">2</span>,] <span class="number">0.25</span> <span class="number">1.00</span>    .</span><br><span class="line">[<span class="number">3</span>,] <span class="number">0.50</span> <span class="number">0.00</span> <span class="number">1.00</span></span><br><span class="line"></span><br><span class="line">$U</span><br><span class="line"><span class="number">3</span> x <span class="number">3</span> Matrix of class <span class="string">"dtrMatrix"</span></span><br><span class="line">     [,<span class="number">1</span>]  [,<span class="number">2</span>]  [,<span class="number">3</span>] </span><br><span class="line">[<span class="number">1</span>,]  <span class="number">4.00</span> <span class="number">10.00</span> -<span class="number">1.00</span></span><br><span class="line">[<span class="number">2</span>,]     . -<span class="number">0.50</span>  <span class="number">0.25</span></span><br><span class="line">[<span class="number">3</span>,]     .     . -<span class="number">0.50</span></span><br><span class="line"></span><br><span class="line">$P</span><br><span class="line"><span class="number">3</span> x <span class="number">3</span> sparse Matrix of class <span class="string">"pMatrix"</span></span><br><span class="line">          </span><br><span class="line">[<span class="number">1</span>,] . | .</span><br><span class="line">[<span class="number">2</span>,] . . |</span><br><span class="line">[<span class="number">3</span>,] | . .</span><br><span class="line"></span><br><span class="line">&gt; <span class="comment"># QR分解</span></span><br><span class="line">&gt; qr.A &lt;- qr(A);qr.A</span><br><span class="line">$`qr`</span><br><span class="line">           [,<span class="number">1</span>]        [,<span class="number">2</span>]      [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] -<span class="number">4.5825757</span> -<span class="number">11.3473303</span> <span class="number">1.3093073</span></span><br><span class="line">[<span class="number">2</span>,]  <span class="number">0.4364358</span>  -<span class="number">0.4879500</span> <span class="number">0.2927700</span></span><br><span class="line">[<span class="number">3</span>,]  <span class="number">0.8728716</span>   <span class="number">0.8944272</span> <span class="number">0.4472136</span></span><br><span class="line"></span><br><span class="line">$rank</span><br><span class="line">[<span class="number">1</span>] <span class="number">3</span></span><br><span class="line"></span><br><span class="line">$qraux</span><br><span class="line">[<span class="number">1</span>] <span class="number">1.2182179</span> <span class="number">1.4472136</span> <span class="number">0.4472136</span></span><br><span class="line"></span><br><span class="line">$pivot</span><br><span class="line">[<span class="number">1</span>] <span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line">attr(,<span class="string">"class"</span>)</span><br><span class="line">[<span class="number">1</span>] <span class="string">"qr"</span></span><br><span class="line">&gt; qr.Q(qr.A)</span><br><span class="line">           [,<span class="number">1</span>]        [,<span class="number">2</span>]          [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] -<span class="number">0.2182179</span>  <span class="number">0.97590007</span>  <span class="number">1.110223e-16</span></span><br><span class="line">[<span class="number">2</span>,] -<span class="number">0.4364358</span> -<span class="number">0.09759001</span> -<span class="number">8.944272e-01</span></span><br><span class="line">[<span class="number">3</span>,] -<span class="number">0.8728716</span> -<span class="number">0.19518001</span>  <span class="number">4.472136e-01</span></span><br><span class="line">&gt; qr.R(qr.A)</span><br><span class="line">          [,<span class="number">1</span>]      [,<span class="number">2</span>]      [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] -<span class="number">4.582576</span> -<span class="number">11.34733</span> <span class="number">1.3093073</span></span><br><span class="line">[<span class="number">2</span>,]  <span class="number">0.000000</span>  -<span class="number">0.48795</span> <span class="number">0.2927700</span></span><br><span class="line">[<span class="number">3</span>,]  <span class="number">0.000000</span>   <span class="number">0.00000</span> <span class="number">0.4472136</span></span><br><span class="line">&gt; <span class="comment"># 奇异值分解</span></span><br><span class="line">&gt; svd(A)</span><br><span class="line">$`d`</span><br><span class="line">[<span class="number">1</span>] <span class="number">12.3170620</span>  <span class="number">0.5148993</span>  <span class="number">0.1576778</span></span><br><span class="line"></span><br><span class="line">$u</span><br><span class="line">           [,<span class="number">1</span>]       [,<span class="number">2</span>]       [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] -<span class="number">0.1799112</span>  <span class="number">0.5216823</span> -<span class="number">0.8339542</span></span><br><span class="line">[<span class="number">2</span>,] -<span class="number">0.4433971</span> -<span class="number">0.7997847</span> -<span class="number">0.4046522</span></span><br><span class="line">[<span class="number">3</span>,] -<span class="number">0.8780837</span>  <span class="number">0.2969714</span>  <span class="number">0.3752026</span></span><br><span class="line"></span><br><span class="line">$v</span><br><span class="line">           [,<span class="number">1</span>]      [,<span class="number">2</span>]       [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] -<span class="number">0.3717640</span> <span class="number">0.2136312</span> -<span class="number">0.9034120</span></span><br><span class="line">[<span class="number">2</span>,] -<span class="number">0.9221067</span> <span class="number">0.0274913</span>  <span class="number">0.3859580</span></span><br><span class="line">[<span class="number">3</span>,]  <span class="number">0.1072886</span> <span class="number">0.9765275</span>  <span class="number">0.1867705</span></span><br><span class="line"></span><br><span class="line">&gt; <span class="comment"># 谱分解，矩阵A的特征向量</span></span><br><span class="line">&gt; eigen(A)</span><br><span class="line">eigen() decomposition</span><br><span class="line">$`values`</span><br><span class="line">[<span class="number">1</span>] <span class="number">3.7320508</span> <span class="number">1.0000000</span> <span class="number">0.2679492</span></span><br><span class="line"></span><br><span class="line">$vectors</span><br><span class="line">           [,<span class="number">1</span>]         [,<span class="number">2</span>]       [,<span class="number">3</span>]</span><br><span class="line">[<span class="number">1</span>,] -<span class="number">0.2440169</span> <span class="number">4.472136e-01</span> -<span class="number">0.9106836</span></span><br><span class="line">[<span class="number">2</span>,] -<span class="number">0.3333333</span> <span class="number">2.979534e-16</span>  <span class="number">0.3333333</span></span><br><span class="line">[<span class="number">3</span>,] -<span class="number">0.9106836</span> <span class="number">8.944272e-01</span> -<span class="number">0.2440169</span></span><br></pre></td></tr></table></figure></li>
+<li><p>加载<code>Lattice</code>程序包和<code>Matrix</code>程序包, 由<code>Hilbert()</code>函数直接生成一个5阶<code>Hilbert</code>矩阵<strong>H</strong>, 作如下运算:</p>
+<ol type="1">
+<li><p>对<strong>H</strong>作 <strong>Cholesky分解</strong>, 即求下三角阵<strong>L</strong>, 使得<span class="math inline">\(\mathbf{H=LL}^{T}\)</span>;</p></li>
+<li><p>计算<strong>H</strong>的条件数 (关于2-范数条件数, 用<code>kappa()</code>函数精确计算) 和条件数的倒数 (用<code>rcond()</code>函数计算).</p></li>
+</ol>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">library</span>(lattice);<span class="keyword">library</span>(Matrix)</span><br><span class="line">&gt; H &lt;- Hilbert(<span class="number">5</span>);H</span><br><span class="line"><span class="number">5</span> x <span class="number">5</span> Matrix of class <span class="string">"dpoMatrix"</span></span><br><span class="line">          [,<span class="number">1</span>]      [,<span class="number">2</span>]      [,<span class="number">3</span>]      [,<span class="number">4</span>]      [,<span class="number">5</span>]</span><br><span class="line">[<span class="number">1</span>,] <span class="number">1.0000000</span> <span class="number">0.5000000</span> <span class="number">0.3333333</span> <span class="number">0.2500000</span> <span class="number">0.2000000</span></span><br><span class="line">[<span class="number">2</span>,] <span class="number">0.5000000</span> <span class="number">0.3333333</span> <span class="number">0.2500000</span> <span class="number">0.2000000</span> <span class="number">0.1666667</span></span><br><span class="line">[<span class="number">3</span>,] <span class="number">0.3333333</span> <span class="number">0.2500000</span> <span class="number">0.2000000</span> <span class="number">0.1666667</span> <span class="number">0.1428571</span></span><br><span class="line">[<span class="number">4</span>,] <span class="number">0.2500000</span> <span class="number">0.2000000</span> <span class="number">0.1666667</span> <span class="number">0.1428571</span> <span class="number">0.1250000</span></span><br><span class="line">[<span class="number">5</span>,] <span class="number">0.2000000</span> <span class="number">0.1666667</span> <span class="number">0.1428571</span> <span class="number">0.1250000</span> <span class="number">0.1111111</span></span><br><span class="line">&gt; <span class="comment"># Cholesky分解</span></span><br><span class="line">&gt; chol(H)</span><br><span class="line"><span class="number">5</span> x <span class="number">5</span> Matrix of class <span class="string">"Cholesky"</span></span><br><span class="line">     [,<span class="number">1</span>]        [,<span class="number">2</span>]        [,<span class="number">3</span>]        [,<span class="number">4</span>]        [,<span class="number">5</span>]       </span><br><span class="line">[<span class="number">1</span>,] <span class="number">1.000000000</span> <span class="number">0.500000000</span> <span class="number">0.333333333</span> <span class="number">0.250000000</span> <span class="number">0.200000000</span></span><br><span class="line">[<span class="number">2</span>,]           . <span class="number">0.288675135</span> <span class="number">0.288675135</span> <span class="number">0.259807621</span> <span class="number">0.230940108</span></span><br><span class="line">[<span class="number">3</span>,]           .           . <span class="number">0.074535599</span> <span class="number">0.111803399</span> <span class="number">0.127775313</span></span><br><span class="line">[<span class="number">4</span>,]           .           .           . <span class="number">0.018898224</span> <span class="number">0.037796447</span></span><br><span class="line">[<span class="number">5</span>,]           .           .           .           . <span class="number">0.004761905</span></span><br><span class="line">&gt; <span class="comment"># 矩阵H的2范数下的精确条件数</span></span><br><span class="line">&gt; kappa(H,exact=<span class="literal">TRUE</span>)</span><br><span class="line">[<span class="number">1</span>] <span class="number">476607.3</span></span><br><span class="line">&gt; <span class="comment"># 矩阵H的1范数下的条件数的倒数</span></span><br><span class="line">&gt; rcond(H)</span><br><span class="line">[<span class="number">1</span>] <span class="number">1.059708e-06</span></span><br></pre></td></tr></table></figure></li>
+<li><p>求方程<span class="math inline">\(2x^3-6x-1=0\)</span>在区间<span class="math inline">\([1,2]\)</span>内的根.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="comment"># 定义函数</span></span><br><span class="line">fun &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	f &lt;- <span class="number">2</span>*x^<span class="number">3</span>-<span class="number">6</span>*x-<span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line">&gt; <span class="comment"># 求非线性方程的根</span></span><br><span class="line">&gt; uniroot(fun,c(<span class="number">1</span>,<span class="number">2</span>))</span><br><span class="line">$`root`</span><br><span class="line">[<span class="number">1</span>] <span class="number">1.810013</span></span><br><span class="line"></span><br><span class="line">$f.root</span><br><span class="line">[<span class="number">1</span>] -<span class="number">0.0003438167</span></span><br><span class="line"></span><br><span class="line">$iter</span><br><span class="line">[<span class="number">1</span>] <span class="number">5</span></span><br><span class="line"></span><br><span class="line">$init.it</span><br><span class="line">[<span class="number">1</span>] <span class="literal">NA</span></span><br><span class="line"></span><br><span class="line">$estim.prec</span><br><span class="line">[<span class="number">1</span>] <span class="number">6.103516e-05</span></span><br></pre></td></tr></table></figure></li>
+<li><p>求方程<span class="math inline">\(54x^6 + 45x^5 - 102x^4 - 69x^3 + 35x^2 + 16x - 4 = 0\)</span>的全部实根.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="comment"># 定义函数</span></span><br><span class="line">fun &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	f &lt;- <span class="number">54</span>*x^<span class="number">6</span>+<span class="number">45</span>*x^<span class="number">5</span>-<span class="number">102</span>*x^<span class="number">4</span>-<span class="number">69</span>*x^<span class="number">3</span>+<span class="number">35</span>*x^<span class="number">2</span>+<span class="number">16</span>*x-<span class="number">4</span></span><br><span class="line">&#125;;fun</span><br><span class="line">&gt; <span class="comment"># 求方程的全部实根</span></span><br><span class="line">&gt; roots &lt;- polyroot(c(-<span class="number">4</span>,<span class="number">16</span>,<span class="number">35</span>,-<span class="number">69</span>,-<span class="number">102</span>,<span class="number">45</span>,<span class="number">54</span>))</span><br><span class="line">&gt; Re(roots)</span><br><span class="line">[<span class="number">1</span>]  <span class="number">0.2051829</span> -<span class="number">0.6666667</span> -<span class="number">0.6666667</span>  <span class="number">0.5000000</span>  <span class="number">1.1761156</span> -<span class="number">1.3812985</span></span><br></pre></td></tr></table></figure></li>
+<li><p>求解非线性方程组</p>
+<p>$ \begin{cases} -13+x_1+ ((15-x_2)x2-2) x_2=0 \ -29+x_1+((x_2+1)x_2-14) x_2=0 \end{cases}$</p>
+<p>取初始点<span class="math inline">\(\mathbf{x}^{(0)}=(0.5, -2)^T\)</span>, 精度要求<span class="math inline">\(\epsilon=10^{-5}\)</span>.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P8 source code</span></span><br><span class="line">funs &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	f &lt;- c(-<span class="number">13</span>+x[<span class="number">1</span>]+((<span class="number">15</span>-x[<span class="number">2</span>])*x[<span class="number">2</span>]-<span class="number">2</span>)*x[<span class="number">2</span>], </span><br><span class="line">		   -<span class="number">29</span>+x[<span class="number">1</span>]+((x[<span class="number">2</span>]+<span class="number">1</span>)*x[<span class="number">2</span>]-<span class="number">14</span>)*x[<span class="number">2</span>] )</span><br><span class="line">	J &lt;- matrix(c( <span class="number">1</span>, <span class="number">30</span>*x[<span class="number">2</span>]-<span class="number">3</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>]-<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">2</span>]-<span class="number">14</span> ),</span><br><span class="line">			   nrow=<span class="number">2</span>,byrow=<span class="literal">TRUE</span>)</span><br><span class="line">     list(f=f,J=J)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">source</span>(<span class="string">"Newtons.R"</span>)</span><br><span class="line">Newtons(funs,x=c(<span class="number">0</span>,<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># "Newtons.R"</span></span><br><span class="line">Newtons &lt;- <span class="keyword">function</span>(funs,x,ep=<span class="number">1e-5</span>,it_max=<span class="number">100</span>)&#123;</span><br><span class="line">	index &lt;- <span class="number">0</span></span><br><span class="line">	k &lt;- <span class="number">1</span></span><br><span class="line">	<span class="keyword">while</span>(k &lt;= it_max)&#123;</span><br><span class="line">		x1 &lt;- x;</span><br><span class="line">		obj &lt;- funs(x)</span><br><span class="line">		x &lt;- x - solve(obj$J,obj$f)</span><br><span class="line">		norm &lt;- sqrt((x-x1) %*% (x-x1))</span><br><span class="line">		<span class="keyword">if</span>(norm &lt; ep)&#123;</span><br><span class="line">			index &lt;- <span class="number">1</span></span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line">		k &lt;- k+<span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line">	obj &lt;- funs(x)</span><br><span class="line">	list(root=x,it=k,index=index,FunVal=obj$f)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P8 run results</span></span><br><span class="line">&gt; funs &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ f &lt;- c(-<span class="number">13</span>+x[<span class="number">1</span>]+((<span class="number">15</span>-x[<span class="number">2</span>])*x[<span class="number">2</span>]-<span class="number">2</span>)*x[<span class="number">2</span>], </span><br><span class="line">+    -<span class="number">29</span>+x[<span class="number">1</span>]+((x[<span class="number">2</span>]+<span class="number">1</span>)*x[<span class="number">2</span>]-<span class="number">14</span>)*x[<span class="number">2</span>] )</span><br><span class="line">+ J &lt;- matrix(c( <span class="number">1</span>, <span class="number">30</span>*x[<span class="number">2</span>]-<span class="number">3</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>]-<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">2</span>]-<span class="number">14</span> ),</span><br><span class="line">+    nrow=<span class="number">2</span>,byrow=<span class="literal">TRUE</span>)</span><br><span class="line">+      list(f=f,J=J)</span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="keyword">source</span>(<span class="string">"Newtons.R"</span>)</span><br><span class="line">&gt; Newtons(funs,x=c(<span class="number">0</span>,<span class="number">1</span>))</span><br><span class="line">$`root`</span><br><span class="line">[<span class="number">1</span>] -<span class="number">413.788513</span>    <span class="number">7.889084</span></span><br><span class="line"></span><br><span class="line">$it</span><br><span class="line">[<span class="number">1</span>] <span class="number">13</span></span><br><span class="line"></span><br><span class="line">$index</span><br><span class="line">[<span class="number">1</span>] <span class="number">1</span></span><br><span class="line"></span><br><span class="line">$FunVal</span><br><span class="line">[<span class="number">1</span>] <span class="number">5.684342e-14</span> <span class="number">1.705303e-13</span></span><br></pre></td></tr></table></figure></li>
+<li><p>求一元函数<span class="math inline">\(f(x)=e^x-3x\)</span> 在区间 <span class="math inline">\([0, 2]\)</span> 内的极小点.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P9 source code</span></span><br><span class="line">fun &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	f &lt;- exp(x)-<span class="number">3</span>*x</span><br><span class="line">&#125;</span><br><span class="line">optimize(fun,lower=<span class="number">0</span>,upper=<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P9 run results</span></span><br><span class="line">&gt; fun &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ f &lt;- exp(x)-<span class="number">3</span>*x</span><br><span class="line">+ &#125;</span><br><span class="line">&gt; optimize(fun,lower=<span class="number">0</span>,upper=<span class="number">2</span>)</span><br><span class="line">$`minimum`</span><br><span class="line">[<span class="number">1</span>] <span class="number">1.098599</span></span><br><span class="line"></span><br><span class="line">$objective</span><br><span class="line">[<span class="number">1</span>] -<span class="number">0.2958369</span></span><br></pre></td></tr></table></figure></li>
+<li><p>用<code>nlm()</code>函数求解无约束间题 <span class="math inline">\(min \quad f(x)=(x_1+10x_2)^2 + 5(x_3-x_4)^2 + (x_2-2x_3)^4 + 10(x_1-x_4)^4\)</span> 取初始点<span class="math inline">\(x^{(0)} = (3,-1,0,1)^T\)</span>, 并为<code>nlm()</code>函数提供目标函数的梯度.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P10 source code</span></span><br><span class="line"><span class="keyword">source</span>(<span class="string">"Rosenbrock.R"</span>)</span><br><span class="line">nlm(obj, c(<span class="number">3</span>,-<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># "Rosenbrock.R"</span></span><br><span class="line">obj &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	<span class="literal">F</span> &lt;- c( x[<span class="number">1</span>]+<span class="number">10</span>*x[<span class="number">2</span>], sqrt(<span class="number">5</span>)*(x[<span class="number">3</span>]-x[<span class="number">4</span>]), (x[<span class="number">2</span>]-<span class="number">2</span>*x[<span class="number">3</span>])^<span class="number">2</span>, (sqrt(<span class="number">10</span>)*(x[<span class="number">1</span>]-x[<span class="number">4</span>]))^<span class="number">2</span> )</span><br><span class="line">	g &lt;- <span class="keyword">function</span>(x,<span class="literal">F</span>)&#123;</span><br><span class="line">		J &lt;- matrix( c(<span class="number">1</span>,<span class="number">10</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="number">0</span>,<span class="number">0</span>,sqrt(<span class="number">5</span>),-sqrt(<span class="number">5</span>), <span class="number">0</span>,<span class="number">2</span>*x[<span class="number">2</span>],-<span class="number">4</span>*x[<span class="number">3</span>],<span class="number">0</span>, <span class="number">2</span>*sqrt(<span class="number">10</span>)*x[<span class="number">1</span>],<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>*sqrt(<span class="number">10</span>)*x[<span class="number">4</span>]),</span><br><span class="line">					nrow=<span class="number">4</span>,ncol=<span class="number">4</span>,byrow=<span class="literal">TRUE</span> )</span><br><span class="line">		<span class="number">2</span>*t(J)%*%<span class="literal">F</span></span><br><span class="line">	&#125;</span><br><span class="line">	f &lt;- t(<span class="literal">F</span>) %*% <span class="literal">F</span></span><br><span class="line">	attr(f, <span class="string">"gradient"</span>) &lt;- g(x,<span class="literal">F</span>)</span><br><span class="line">	f</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>用<code>optim()</code>函数求解问题10, 并指定使用<strong>BFGS算法</strong>.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P11 source code</span></span><br><span class="line"><span class="comment"># 目标函数</span></span><br><span class="line">fun &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line"><span class="comment">#	f &lt;- (x[1]+10*x[2])^2 + 5*(x[3]-x[4])^2 + </span></span><br><span class="line"><span class="comment">#          (x[2]-2*x[3])^4  + 10*(x[1]-x[4])^4 )	</span></span><br><span class="line">	<span class="literal">F</span> &lt;- c( x[<span class="number">1</span>]+<span class="number">10</span>*x[<span class="number">2</span>], sqrt(<span class="number">5</span>)*(x[<span class="number">3</span>]-x[<span class="number">4</span>]), (x[<span class="number">2</span>]-<span class="number">2</span>*x[<span class="number">3</span>])^<span class="number">2</span>, (sqrt(<span class="number">10</span>)*(x[<span class="number">1</span>]-x[<span class="number">4</span>]))^<span class="number">2</span> )</span><br><span class="line">	t(<span class="literal">F</span>) %*% <span class="literal">F</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 梯度函数</span></span><br><span class="line">grad &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	<span class="literal">F</span> &lt;- c( x[<span class="number">1</span>]+<span class="number">10</span>*x[<span class="number">2</span>], sqrt(<span class="number">5</span>)*(x[<span class="number">3</span>]-x[<span class="number">4</span>]), (x[<span class="number">2</span>]-<span class="number">2</span>*x[<span class="number">3</span>])^<span class="number">2</span>, (sqrt(<span class="number">10</span>)*(x[<span class="number">1</span>]-x[<span class="number">4</span>]))^<span class="number">2</span> )</span><br><span class="line">	J &lt;- matrix( c(<span class="number">1</span>,<span class="number">10</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="number">0</span>,<span class="number">0</span>,sqrt(<span class="number">5</span>),-sqrt(<span class="number">5</span>), <span class="number">0</span>,<span class="number">2</span>*x[<span class="number">2</span>],-<span class="number">4</span>*x[<span class="number">3</span>],<span class="number">0</span>, <span class="number">2</span>*sqrt(<span class="number">10</span>)*x[<span class="number">1</span>],<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>*sqrt(<span class="number">10</span>)*x[<span class="number">4</span>]),nrow=<span class="number">4</span>,ncol=<span class="number">4</span>,byrow=<span class="literal">TRUE</span> )</span><br><span class="line">	<span class="number">2</span>*t(J) %*% <span class="literal">F</span>	</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 调用optim()函数</span></span><br><span class="line">optim(c(<span class="number">3</span>,-<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>),fun,grad,method=<span class="string">"BFGS"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P11 run results</span></span><br><span class="line">&gt; <span class="comment"># 目标函数</span></span><br><span class="line">&gt; fun &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ <span class="comment">#f &lt;- (x[1]+10*x[2])^2 + 5*(x[3]-x[4])^2 + </span></span><br><span class="line">+ <span class="comment">#          (x[2]-2*x[3])^4  + 10*(x[1]-x[4])^4 )</span></span><br><span class="line">+ <span class="literal">F</span> &lt;- c( x[<span class="number">1</span>]+<span class="number">10</span>*x[<span class="number">2</span>], sqrt(<span class="number">5</span>)*(x[<span class="number">3</span>]-x[<span class="number">4</span>]), (x[<span class="number">2</span>]-<span class="number">2</span>*x[<span class="number">3</span>])^<span class="number">2</span>, (sqrt(<span class="number">10</span>)*(x[<span class="number">1</span>]-x[<span class="number">4</span>]))^<span class="number">2</span> )</span><br><span class="line">+ t(<span class="literal">F</span>) %*% <span class="literal">F</span></span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="comment"># 梯度函数</span></span><br><span class="line">&gt; grad &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ <span class="literal">F</span> &lt;- c( x[<span class="number">1</span>]+<span class="number">10</span>*x[<span class="number">2</span>], sqrt(<span class="number">5</span>)*(x[<span class="number">3</span>]-x[<span class="number">4</span>]), (x[<span class="number">2</span>]-<span class="number">2</span>*x[<span class="number">3</span>])^<span class="number">2</span>, (sqrt(<span class="number">10</span>)*(x[<span class="number">1</span>]-x[<span class="number">4</span>]))^<span class="number">2</span> )</span><br><span class="line">+ J &lt;- matrix( c(<span class="number">1</span>,<span class="number">10</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="number">0</span>,<span class="number">0</span>,sqrt(<span class="number">5</span>),-sqrt(<span class="number">5</span>), <span class="number">0</span>,<span class="number">2</span>*x[<span class="number">2</span>],-<span class="number">4</span>*x[<span class="number">3</span>],<span class="number">0</span>, <span class="number">2</span>*sqrt(<span class="number">10</span>)*x[<span class="number">1</span>],<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>*sqrt(<span class="number">10</span>)*x[<span class="number">4</span>]),nrow=<span class="number">4</span>,ncol=<span class="number">4</span>,byrow=<span class="literal">TRUE</span> )</span><br><span class="line">+ <span class="number">2</span>*t(J) %*% <span class="literal">F</span></span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="comment"># 调用optim()函数</span></span><br><span class="line">&gt; optim(c(<span class="number">3</span>,-<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>),fun,grad,method=<span class="string">"BFGS"</span>)</span><br><span class="line">$`par`</span><br><span class="line">[<span class="number">1</span>]  <span class="number">0.042534955</span> -<span class="number">0.004201827</span>  <span class="number">0.056920304</span>  <span class="number">0.057480557</span></span><br><span class="line"></span><br><span class="line">$value</span><br><span class="line">[<span class="number">1</span>] <span class="number">0.0002009827</span></span><br><span class="line"></span><br><span class="line">$counts</span><br><span class="line"><span class="keyword">function</span> gradient </span><br><span class="line">     <span class="number">228</span>       <span class="number">30</span> </span><br><span class="line"></span><br><span class="line">$convergence</span><br><span class="line">[<span class="number">1</span>] <span class="number">0</span></span><br><span class="line"></span><br><span class="line">$message</span><br><span class="line"><span class="literal">NULL</span></span><br></pre></td></tr></table></figure></li>
+<li><p>用<code>n1minb()</code>函数求解约束问题</p>
+<p>$min f(x) = -x_1x_2(x_3-x_1-2x_2) \ s.t. \ 0 x_1 42, \ 0 x_2 36, \ 0 x_3 72, $</p>
+<p>取初始点 <span class="math inline">\(x^{(0)} =(10,10,10)^T\)</span>.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P12 source code</span></span><br><span class="line"><span class="comment"># 目标函数</span></span><br><span class="line">func &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	f &lt;- -x[<span class="number">1</span>]*x[<span class="number">2</span>]*(x[<span class="number">3</span>]-x[<span class="number">1</span>]-<span class="number">2</span>*x[<span class="number">2</span>])</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 梯度函数</span></span><br><span class="line">grad &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	g &lt;- c( -x[<span class="number">2</span>]*x[<span class="number">3</span>]+<span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>], -x[<span class="number">1</span>]*x[<span class="number">3</span>]+x[<span class="number">1</span>]*x[<span class="number">1</span>]+<span class="number">4</span>*x[<span class="number">1</span>]*x[<span class="number">2</span>], -x[<span class="number">1</span>]*x[<span class="number">2</span>])</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 调用nlminb()函数</span></span><br><span class="line">nlminb( c(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>), func, grad,</span><br><span class="line">        lower=c(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>), upper=c(<span class="number">42</span>,<span class="number">36</span>,<span class="number">72</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P12 run results</span></span><br><span class="line">&gt; <span class="comment"># 目标函数</span></span><br><span class="line">&gt; func &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ f &lt;- -x[<span class="number">1</span>]*x[<span class="number">2</span>]*(x[<span class="number">3</span>]-x[<span class="number">1</span>]-<span class="number">2</span>*x[<span class="number">2</span>])</span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="comment"># 梯度函数</span></span><br><span class="line">&gt; grad &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ g &lt;- c( -x[<span class="number">2</span>]*x[<span class="number">3</span>]+<span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>], -x[<span class="number">1</span>]*x[<span class="number">3</span>]+x[<span class="number">1</span>]*x[<span class="number">1</span>]+<span class="number">4</span>*x[<span class="number">1</span>]*x[<span class="number">2</span>], -x[<span class="number">1</span>]*x[<span class="number">2</span>])</span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="comment"># 调用nlminb()函数</span></span><br><span class="line">&gt; nlminb( c(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>), func, grad,</span><br><span class="line">+         lower=c(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>), upper=c(<span class="number">42</span>,<span class="number">36</span>,<span class="number">72</span>))</span><br><span class="line">$`par`</span><br><span class="line">[<span class="number">1</span>] <span class="number">24</span> <span class="number">12</span> <span class="number">72</span></span><br><span class="line"></span><br><span class="line">$objective</span><br><span class="line">[<span class="number">1</span>] -<span class="number">6912</span></span><br><span class="line"></span><br><span class="line">$convergence</span><br><span class="line">[<span class="number">1</span>] <span class="number">0</span></span><br><span class="line"></span><br><span class="line">$iterations</span><br><span class="line">[<span class="number">1</span>] <span class="number">14</span></span><br><span class="line"></span><br><span class="line">$evaluations</span><br><span class="line"><span class="keyword">function</span> gradient </span><br><span class="line">      <span class="number">19</span>       <span class="number">15</span> </span><br><span class="line"></span><br><span class="line">$message</span><br><span class="line">[<span class="number">1</span>] <span class="string">"relative convergence (4)"</span></span><br></pre></td></tr></table></figure></li>
+<li><p>用<code>constrOptim()</code>函数求解约束问题</p>
+<p>$ min f(x) = 2x_1^2 + 2x_1x_2 + 2x_1x_3 + 2x_2^2 + x_3^2 - 8x_1 - 6x_2 - 4x_3$</p>
+<p><span class="math inline">\(s.t. \\\ \quad \quad \quad x_1+x_2+2x_3 \le 3, \\ \quad \quad \quad x_1 \ge 0, x_2 \ge 0, x_3 \ge 0\)</span></p>
+<p>取初始点<span class="math inline">\(x^{(0)}=(0.1, 0.1, 0.1)^T\)</span>.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P13 source code</span></span><br><span class="line"><span class="comment"># 目标函数</span></span><br><span class="line">func &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	f &lt;- <span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">1</span>]+<span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">3</span>]+</span><br><span class="line">	     <span class="number">2</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>]+x[<span class="number">3</span>]*x[<span class="number">3</span>]-<span class="number">8</span>*x[<span class="number">1</span>]-<span class="number">6</span>*x[<span class="number">2</span>]-<span class="number">4</span>*x[<span class="number">3</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 梯度函数</span></span><br><span class="line">grad &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">	g &lt;- c( <span class="number">4</span>*x[<span class="number">1</span>]+<span class="number">2</span>*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">3</span>]-<span class="number">8</span>,</span><br><span class="line">             <span class="number">2</span>*x[<span class="number">1</span>]+<span class="number">4</span>*x[<span class="number">2</span>]-<span class="number">6</span>,</span><br><span class="line">             <span class="number">2</span>*x[<span class="number">1</span>]+<span class="number">2</span>*x[<span class="number">3</span>]-<span class="number">4</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 系数矩阵</span></span><br><span class="line">z &lt;- c( -<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">2</span>,</span><br><span class="line">         <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">         <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">         <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line">A &lt;- matrix(z,ncol=<span class="number">3</span>,byrow=<span class="literal">TRUE</span>)</span><br><span class="line"><span class="comment"># 右端向量</span></span><br><span class="line">b &lt;- c( -<span class="number">3</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line"><span class="comment"># 调用constrOpim()函数,初始点(0.5,0.5,0.5)</span></span><br><span class="line">constrOptim(rep(<span class="number">0.5</span>,<span class="number">3</span>),func,grad,ui=A,ci=b)</span><br></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P13 run results</span></span><br><span class="line">&gt; <span class="comment"># 目标函数</span></span><br><span class="line">&gt; func &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ f &lt;- <span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">1</span>]+<span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">1</span>]*x[<span class="number">3</span>]+</span><br><span class="line">+      <span class="number">2</span>*x[<span class="number">2</span>]*x[<span class="number">2</span>]+x[<span class="number">3</span>]*x[<span class="number">3</span>]-<span class="number">8</span>*x[<span class="number">1</span>]-<span class="number">6</span>*x[<span class="number">2</span>]-<span class="number">4</span>*x[<span class="number">3</span>]</span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="comment"># 梯度函数</span></span><br><span class="line">&gt; grad &lt;- <span class="keyword">function</span>(x)&#123;</span><br><span class="line">+ g &lt;- c( <span class="number">4</span>*x[<span class="number">1</span>]+<span class="number">2</span>*x[<span class="number">2</span>]+<span class="number">2</span>*x[<span class="number">3</span>]-<span class="number">8</span>,</span><br><span class="line">+              <span class="number">2</span>*x[<span class="number">1</span>]+<span class="number">4</span>*x[<span class="number">2</span>]-<span class="number">6</span>,</span><br><span class="line">+              <span class="number">2</span>*x[<span class="number">1</span>]+<span class="number">2</span>*x[<span class="number">3</span>]-<span class="number">4</span>)</span><br><span class="line">+ &#125;</span><br><span class="line">&gt; <span class="comment"># 系数矩阵</span></span><br><span class="line">&gt; z &lt;- c( -<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">2</span>,</span><br><span class="line">+          <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>,</span><br><span class="line">+          <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>,</span><br><span class="line">+          <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line">&gt; A &lt;- matrix(z,ncol=<span class="number">3</span>,byrow=<span class="literal">TRUE</span>)</span><br><span class="line">&gt; <span class="comment"># 右端向量</span></span><br><span class="line">&gt; b &lt;- c( -<span class="number">3</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">&gt; <span class="comment"># 调用constrOpim()函数,初始点(0.5,0.5,0.5)</span></span><br><span class="line">&gt; constrOptim(rep(<span class="number">0.5</span>,<span class="number">3</span>),func,grad,ui=A,ci=b)</span><br><span class="line">$`par`</span><br><span class="line">[<span class="number">1</span>] <span class="number">1.3334954</span> <span class="number">0.7777538</span> <span class="number">0.4443754</span></span><br><span class="line"></span><br><span class="line">$value</span><br><span class="line">[<span class="number">1</span>] -<span class="number">8.888889</span></span><br><span class="line"></span><br><span class="line">$counts</span><br><span class="line"><span class="keyword">function</span> gradient </span><br><span class="line">     <span class="number">106</span>       <span class="number">24</span> </span><br><span class="line"></span><br><span class="line">$convergence</span><br><span class="line">[<span class="number">1</span>] <span class="number">0</span></span><br><span class="line"></span><br><span class="line">$message</span><br><span class="line"><span class="literal">NULL</span></span><br><span class="line"></span><br><span class="line">$outer.iterations</span><br><span class="line">[<span class="number">1</span>] <span class="number">3</span></span><br><span class="line"></span><br><span class="line">$barrier.value</span><br><span class="line">[<span class="number">1</span>] -<span class="number">2.722476e-05</span></span><br></pre></td></tr></table></figure></li>
+<li><p>已知某大型工件轮廓数据如表2所示, 加工时需要 <span class="math inline">\(x\)</span> 每改变 <span class="math inline">\(0.1m\)</span> 时的 <span class="math inline">\(y\)</span> 值, 试用三次样条插值估计 <span class="math inline">\(y\)</span> 的值, 并画出轮廓曲线.</p>
+<p><em>表 2 某大型工件轮廓数据</em></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>x</th>
+<th>y</th>
+<th></th>
+<th>x</th>
+<th>y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>0.0</td>
+<td>6</td>
+<td>11</td>
+<td>2.0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3</td>
+<td>1.2</td>
+<td>7</td>
+<td>12</td>
+<td>1.8</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>5</td>
+<td>1.7</td>
+<td>8</td>
+<td>13</td>
+<td>1.2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>7</td>
+<td>2.0</td>
+<td>9</td>
+<td>14</td>
+<td>1.0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>9</td>
+<td>2.1</td>
+<td>10</td>
+<td>15</td>
+<td>1.6</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P14 source code</span></span><br><span class="line"><span class="comment"># 三次样条函数spline()</span></span><br><span class="line">x &lt;- c(<span class="number">0</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">9</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>)</span><br><span class="line">y &lt;- c(<span class="number">0.0</span>,<span class="number">1.2</span>,<span class="number">1.7</span>,<span class="number">2.0</span>,<span class="number">2.1</span>,<span class="number">2.0</span>,<span class="number">1.8</span>,<span class="number">1.2</span>,<span class="number">1.0</span>,<span class="number">1.6</span>)</span><br><span class="line">s &lt;- spline(x,y,xout=seq(<span class="number">0</span>,<span class="number">15</span>,<span class="number">0.1</span>))</span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line">par(mai = c(<span class="number">0.8</span>,<span class="number">0.8</span>,<span class="number">0.2</span>,<span class="number">0.2</span>))</span><br><span class="line"><span class="comment">#plot(s$x,s$y,pch=19,type='l',</span></span><br><span class="line"><span class="comment">#     lwd=2,col='blue',</span></span><br><span class="line"><span class="comment">#     xlab='x',ylab='y',</span></span><br><span class="line"><span class="comment">#     main='Problem 14')</span></span><br><span class="line">plot( x, y, pch=<span class="number">19</span>, cex=<span class="number">1.2</span>, col=<span class="number">2</span>)</span><br><span class="line">lines( s$x, s$y, lwd=<span class="number">2</span>, col=<span class="number">4</span> )</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/aGb6enT.png"></p></li>
+<li><p>已知某地区在不同月份的平均日照时间的观测数据如表3所示, 试用三次样条插值函数分析日照时间的变化规律. <em>表 3 某地区的平均日照时间</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>月份</th>
+<th>日照</th>
+<th>月份</th>
+<th>日照</th>
+<th>月份</th>
+<th>日照</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>80.9</td>
+<td>5</td>
+<td>32.0</td>
+<td>9</td>
+<td>52.3</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>67.2</td>
+<td>6</td>
+<td>33.6</td>
+<td>10</td>
+<td>62.0</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>67.1</td>
+<td>7</td>
+<td>36.6</td>
+<td>11</td>
+<td>64.1</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>50.5</td>
+<td>8</td>
+<td>46.8</td>
+<td>12</td>
+<td>71.2</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># P15 source code</span></span><br><span class="line"><span class="comment"># 三次样条函数splinefun()</span></span><br><span class="line">sunlight &lt;- c(<span class="number">80.9</span>, <span class="number">67.2</span>, <span class="number">67.1</span>, <span class="number">50.5</span>, <span class="number">32.0</span>, <span class="number">33.6</span>, <span class="number">36.6</span>, <span class="number">46.8</span>, <span class="number">52.3</span>, <span class="number">62.0</span>, <span class="number">64.1</span>, <span class="number">71.2</span>)</span><br><span class="line">monthlen &lt;- c(<span class="number">31</span>, <span class="number">28</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>)</span><br><span class="line">month = rep( <span class="number">1</span>:<span class="number">12</span>, monthlen)</span><br><span class="line">midmonth &lt;- tapply(<span class="number">1</span>:<span class="number">365</span>, month, median)</span><br><span class="line">x &lt;- c(midmonth, midmonth[<span class="number">1</span>]+<span class="number">365</span>)</span><br><span class="line">y &lt;- sunlight[c(<span class="number">1</span>:<span class="number">12</span>,<span class="number">1</span>)]</span><br><span class="line">s = splinefun(x,y,method=<span class="string">"periodic"</span>)</span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line">par(mai=c(<span class="number">0.9</span>, <span class="number">0.9</span>, <span class="number">0.6</span>, <span class="number">0.2</span>))</span><br><span class="line">plot(<span class="number">1</span>:<span class="number">365</span>, s(<span class="number">1</span>:<span class="number">365</span>),</span><br><span class="line">     type=<span class="string">'l'</span>, lwd=<span class="number">2</span>, col=<span class="string">'blue'</span>,</span><br><span class="line">     xlab=<span class="string">'x'</span>,ylab=<span class="string">'y'</span>,</span><br><span class="line">     main=<span class="string">'Problem 14'</span>)</span><br><span class="line">points(x[-<span class="number">13</span>], y[-<span class="number">13</span>], pch=<span class="number">19</span>, cex=<span class="number">1.2</span>, col=<span class="string">"red"</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/jrPJnLn.png"></p></li>
+</ol>
+<h2 id="open-the-door">Open the Door</h2>
+<p>If you want to enter another room to explore the treasure you are looking for, you can open the door by clicking at <strong><a href="https://niwanli.github.io/" class="uri" title="Wanli | Home">https://niwanli.github.io/</a></strong>. Or, if you want to contact me, please email me at <strong>niwanli@yahoo.com</strong>.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -180,136 +485,118 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://niwanli.github.io/2018/08/09/R-Language-Programming/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-w">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/29/philosophy-and-life/" class="archive-article-date">
-  	<time datetime="2018-06-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-29</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/29/philosophy-and-life/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">哲学与人生</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/29/philosophy-and-life/">哲学与人生</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">philosophy and life</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第1章-r语言入门"><span class="toc-number">1.</span> <span class="toc-text">第1章 R语言入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第2章-数值计算"><span class="toc-number">2.</span> <span class="toc-text">第2章 数值计算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#open-the-door"><span class="toc-number">3.</span> <span class="toc-text">Open the Door</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-w">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/29/proteus/" class="archive-article-date">
-  	<time datetime="2018-06-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-29</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/29/proteus/">Proteus实验指导手册</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Proteus</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-w">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/29/stepping-stones/" class="archive-article-date">
-  	<time datetime="2018-06-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/29/stepping-stones/">Stepping-Stones to Fame and Fortune</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">About Life</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -341,8 +628,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
