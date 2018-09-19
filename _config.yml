@@ -98,6 +98,8 @@ jsonContent:
 
 # Pandoc
 pandoc:
+  enable: true
+  mathjax: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

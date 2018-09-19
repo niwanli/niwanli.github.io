@@ -5,6 +5,7 @@ date: 2018-08-09
 tags:
     - R Language
 toc: true
+mathjax: true
 ---
 
 ## 第1章  R语言入门
