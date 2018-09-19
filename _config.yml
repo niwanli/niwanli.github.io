@@ -98,8 +98,14 @@ jsonContent:
 
 # Pandoc
 pandoc:
-  enable: true
-  mathjax: true
+  filters:
+    - pandoc-citeproc
+  extra:
+    bibliography: "/path/to/bibfile.bib"
+  meta:
+    - suppress-bibliography
+  template: dir/../template.html
+  mathEngine: katex
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
